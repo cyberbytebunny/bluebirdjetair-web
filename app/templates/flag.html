@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<body>
+    <div class="login-container">
+        <h2 class="greeting-container">Hello, {{ username }}!</h2>
+        {% if show_flag %}
+        <div id="flag-content">
+            <p>Flag: {{ flag_content }}</p>
+        </div>
+        {% else %}
+        <div id="non-admin-message">
+            <p>Sorry, you must be an admin to view the flag.</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+{% endblock %}

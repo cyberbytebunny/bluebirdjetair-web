@@ -1,0 +1,159 @@
+.body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+
+body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 60px; /* Provide padding to account for fixed header */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    min-height: 100vh;
+}
+
+.site-header {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 10px; /* Reduced padding for smaller header height */
+    height: 60px; /* Adjusted height for smaller header */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img.logo {
+    height: 100px; /* Adjust as needed */
+}
+
+.logo {
+    height: auto; /* Adjust this as needed */
+    width: auto; /* Adjust this as needed */
+    /* Other existing styles */
+}
+
+.logo-container a:link {
+    text-decoration: none;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px; /* Space for the header */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #005288; /* Aviation blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #003354;
+}
+
+.greeting-container, #flag-content, #non-admin-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#flag-content, #non-admin-message {
+    padding: 15px;
+    background-color: #eeeeee;
+    border-radius: 8px;
+}
+
+button[type="button"] {
+    width: auto;
+    padding: 10px;
+    background-color: #d9534f; /* Bootstrap danger color for contrast */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+#non-admin-message {
+    color: #dc3545; /* Bootstrap danger color */
+    font-weight: bold;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #005288;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.home-button:hover {
+    background-color: #003354;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center;
+    background-color: #fff; /* Adjust as needed */
+    padding: 10px; /* Adjust as needed */
+    margin-left: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000; /* Adjust as needed */
+}
+
+.social-link {
+    text-decoration: none;
+}

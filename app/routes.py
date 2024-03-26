@@ -50,10 +50,11 @@ def flag():
 
     return render_template('flag.html', username=username, show_flag=show_flag, flag_content=flag_content)
 
-
-@main.route('/session', methods=['GET'])
-def cookie():
-    return request.cookies.get('session')
+#Testing to see if username can be rendered from URL
+@main.route('/test', methods=['GET'])
+def test_session():
+    username = request.args.get('username', 'Anonymous')
+    return render_template('flag.html', username=username, show_flag=False, flag_content="NOT-A-REAL-FLAG")
 
 @main.route('/signout')
 def signout():

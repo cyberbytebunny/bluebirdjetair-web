@@ -4,7 +4,8 @@
 {% block content %}
 <body>
     <div class="login-container">
-        <h2 class="greeting-container">Hello, {{ username }}!</h2>
+        <!--Marked safe to test functionality with test function-->
+        <h2 class="greeting-container">Hello, {{ username|safe }}!</h2>
         {% if show_flag %}
         <div id="flag-content">
             <p>Flag: {{ flag_content }}</p>
